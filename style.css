@@ -33,17 +33,23 @@ div.genre-right{
   display: inline;
   float: right;
   width: 100px;
-  margin-right: 50px;
-  background-color: green;
-  }
-div.genre-left{
-  width: 5em;
-  display: inline;
-  float: left;
-  margin-left: .2em;
-  background-color: yellow;
+  margin-right: 62px;
+  
   
   }
+div.genre-left{
+  width: 88px;
+  display: inline;
+  float: left;
+  }
+div.genre-left input{
+  display: inline;
+  padding: 5px;
+} 
+div.genre-right input{
+  display: inline;
+  padding: 5px;
+} 
 div.right-box{
   
   display: inline;
@@ -53,6 +59,8 @@ div.right-box{
   margin-top: 15px;
   padding-top: 2px;
   padding-left: 2px;
+  height: 448px;
+  margin-right: 50px;
   
   }
 div.right-box ul li h2 {
