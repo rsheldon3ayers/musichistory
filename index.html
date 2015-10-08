@@ -6,16 +6,91 @@
   <title>Nashville Software School</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <nav>
-    <div>
-      View Music
+    <div class="nav">
+      <a href="#">View Music</a> 
     </div>
-    <div>
-      Add Music
+    <div class="nav">
+      <a href="#">Add Music</a> 
     </div>
-    <div>
-      Profile
+    <div class="nav">
+      <a href="#">Profile</a>
     </div>
   </nav>
+<body>
+  <form class="left">
+    <label>Song Length:</label>
+    <input type="range">
+    <label>Artist</label>
+    <select id="artist-name">
+      <option>Van Morrison</option>
+      <option>The Band</option>
+      <option>Ryan Adams</option>
+      <option>Morrissey</option>
+      <option>The Smiths</option>
+    </select>
+    <label>Album</label>
+      <select id="album-name">
+        <option>Astral Weeks</option>
+        <option>Caravan</option>
+        <option>Music From the Big Pink</option>
+        <option>The Band</option>
+        <option>Gold</option>
+        <option>Heartbreaker</option>
+        <option>Viva Hate</option>
+        <option>Kill Uncle</option>
+        <option>The Queen is Dead</option>
+        <option>The Smiths</option>
+    </select>
+    
+    <label>Genre:</label>
+    <div class="genre-left">
+    <input type="checkbox">Rock
+    <input type="checkbox">Pop
+    <input type="checkbox">Blues
+     </div>
+      
+    <div class="genre-right">
+    <input type="checkbox">Classical
+    <input type="checkbox">Jazz
+    <input type="checkbox">Hip hop
+    </div>
+    <input type="submit" value="Filter">
+  </form>
+  <div class="right-box">
+    <h2>Into The Mystic</h2>
+    <ul>
+      <li>Van Morrison</li>
+      <li>Caravan</li>
+      <li>Rock</li>
+    </ul>
+    <h2>The Weight</h2>
+      <ul>
+        <li> The Band</li>
+        <li>Music from the Big Pink</li>
+        <li>Rock</li>
+    </ul>
+    <h2>Firecraker</h2>
+      <ul>
+        <li>Ryan Adams</li>
+        <li>Gold</li>
+        <li>Rock</li>
+    </ul>
+    <h2>Suedehead</h2>
+      <ul>
+        <li>Morrissey</li>
+        <li>Viva Hate</li>
+        <li>Rock</li>
+    </ul>
+    <h2>There Is a Light That Never Goes Out</h2>
+      <ul>
+        <li>The Smiths</li>
+        <li>The Queen Is Dead</li>
+        <li>Rock</li>
+    </ul>
+  </div>
+    
+        
+ 
 </head>
 
 <body>
