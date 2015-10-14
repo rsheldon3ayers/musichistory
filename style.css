@@ -3,6 +3,7 @@ header {
   width: 100%;
   height: 100px;
   background-color: #FFB4B0;
+  /*position: fixed;*/
 }
 form.left {
   flex-grow: 1;
@@ -21,12 +22,11 @@ section.right-box {
 div.nav {
   display: inline;
   font-size: 20px;
-  
 
-  }
+}
 nav {
   
-  
+  position: fixed;
   /*margin-left: auto;
   margin-right: auto;*/
   /*margin-bottom: 5px;*/
@@ -98,6 +98,20 @@ ul.song-info li{
   /*padding-top: 2px;*/
   
  }
+ section.right-box section:nth-child(2n+0) {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #FFF5EE;
+}
+section.right-box section:nth-child(2n+1) {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color:#F5FFFA ;
+}
+section.right-box section:nth-child(1) {
+  font-weight: bold;
+}
+
 label {
   display: block;
   padding-top: 2px;
