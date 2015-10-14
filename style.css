@@ -1,15 +1,38 @@
+header {
+  flex: 1 100%;
+  width: 100%;
+  height: 100px;
+  background-color: #FFB4B0;
+}
+form.left {
+  flex-grow: 1;
+  background-color: #4DD7FA;
+  margin-bottom: 200px;
+}
+section.right-box {
+  flex-grow: 3;
+  background-color:  #FEFAC0;
+  margin-bottom: 200px;
+}
+.flex-item {
+  padding: 10px;
+
+}
 div.nav {
   display: inline;
+  font-size: 20px;
+  
+
   }
 nav {
-  border: 1px solid black;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  padding: 15px;
+  
+  
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*margin-bottom: 5px;*/
+  /*padding: 15px;*/
   background-color: #FFB4B0; 
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  /*box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 
   }
 
@@ -19,20 +42,16 @@ input {
 select {
   display: block;
 }
-form.left {
-  width: 250px;
-  float: left;
-  display: inline;
-  background-color: #4DD7FA;
-  border: 2px solid black;
-  margin-top: 15px;
-  padding-top: 20px;
-  padding-left: 15px;
-  height: 448px;
-  margin-left: 150px;
-  
+div.flex-box {
+  padding: 0;
+  list-style: none;
+  height: 50em;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
 }
-div.genre-right{
+section.genre-right{
+  
   display: inline;
   float: right;
   width: 100px;
@@ -40,37 +59,36 @@ div.genre-right{
   
   
   }
-div.genre-left{
+section.genre-left{
+  /*flex-grow: 1;*/
   width: 88px;
   display: inline;
   float: left;
   }
-div.genre-left input{
+section.genre-left input{
   display: inline;
   padding: 5px;
 } 
-div.genre-right input{
+section.genre-right input{
   display: inline;
   padding: 5px;
 } 
-div#right-box{
-  width: 490px;
-  display: inline;
-  float: right;
-  border: 2px solid black;
-  background-color:  #FEFAC0;
-  margin-top: 15px;
-  padding-top: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
-  height: 448px;
-  margin-right: 190px;
-  
-  
-  }
-div.right-box ul li h2 {
-  color: #785616
-}
+/*div#right-box{*/
+  /*width: 490px;*/
+  /*displa/*y: inline;*/
+  /*float: right;*/
+  /*border: 2px solid black;*/
+  /*background-color:  #FEFAC0;*/
+  /*margin-top: 15px;*/
+  /*padding-top: 2px;*/
+  /*padding-left: 2px;*/
+  /*padding-right: 2px;*/
+  /*height: 448px;*/
+  /*margin-right: 190px;*/
+  /*}*/
+/*div.right-box ul li h2 {*/
+  /*color: #785616*/
+/*}*/
 
 ul.song-info li{
   list-style: none;
@@ -85,23 +103,8 @@ label {
   padding-top: 2px;
   padding-bottom: 5px;
 }
-div.sub-button{
+section.sub-button{
   margin-top: 10em;
   padding-left: 100px;
-  -webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
-  -moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
-  box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
-  color:#333;
-  background-color:#FA2;
-  border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  border:none;
-  font-family:'Helvetica Neue',Arial,sans-serif;
-  font-size:16px;
-  font-weight:700;
-  height:36px;
-  padding:4px 16px;
-  text-shadow:#FE6 0 1px 0
 }
 
