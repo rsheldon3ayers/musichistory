@@ -13,14 +13,35 @@ songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album Th
 songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
 songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
-songs.unshift("Into The Mystic by Van Morrison on the album Caravan");
-songs.push("There is a Light That Never Goes out by The Smiths on the album The Queen Is Dead");
+songs.unshift("Into The Mystic - by Van Morrison on the album Caravan");
+songs.push("There is a Light That Never Goes out - by The Smiths on the album The Queen Is Dead");
 console.log(songs);
 
 
 for (var i = 0; i < songs.length; i++) {
-   songs[i] = songs[i].replace(/[^a-zA-Z0-9]/g, " ");
+   songs[i] = songs[i].replace(/>/g, "-");
+   songs[i] = songs[i].replace("*", "");
+   songs[i] = songs[i].replace("@", "");
+   songs[i] = songs[i].replace("(", "");
+   songs[i] = songs[i].replace("!", "");
 
 }
 
+
 console.log(songs);
+
+//var newList = document.getElementById("right-box").innerHTML;
+ var output = " ";
+ for  (var i = 0; i < songs.length; i ++) {
+
+  var songList = songs[i];
+  output = output + "<ul>" + songList;
+  output = output + "</ul>";
+
+ }
+document.getElementById("right-box").innerHTML = output;
+//console.log("newList", newList);
+console.log("output", output);
+
+
+
