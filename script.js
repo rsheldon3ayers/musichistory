@@ -39,7 +39,7 @@ console.log(songs);
   output = output + "</ul>";
 
  }
-document.getElementById("right-box").innerHTML = output;
+document.getElementsByClassName("right-box").innerHTML = output;
 //console.log("newList", newList);
 console.log("output", output);
 
