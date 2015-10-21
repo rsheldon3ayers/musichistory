@@ -1,47 +1,43 @@
-//1. Each student must add one song to the beginning and the end of the array.
-//2. Loop over the array and remove any words or characters that obviously don't belong.
-//3. Students must find and replace the > character in each item with a - character.
-//4. Must add each string to the DOM in index.html in the main content area.
+var addButton = document.getElementById("add-button");
+addButton.addEventListener("click", function(event) {
+	populateList();
+	console.log("works");
+});
+var rightBox = document.getElementById("right-box");
+function populateList() {
 
+	var songTitle = document.getElementById("song-title").value;
+	var artistName = document.getElementById("artist-n").value;
+	var albumName = document.getElementById("album-n").value;
+	console.log(songTitle, artistName, albumName);
+	var newSong= songTitle + "-" + artistName + "-" + albumName;
 
+	var newList = document.createElement("ul");
+	console.log(newList);
+	newList.innerHTML = newSong;
+	rightBox.insertBefore(newList, rightBox.childNodes[0]);
 
-var songs = [];
-
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
-
-songs.unshift("Into The Mystic - by Van Morrison on the album Caravan");
-songs.push("There is a Light That Never Goes out - by The Smiths on the album The Queen Is Dead");
-console.log(songs);
-
-
-for (var i = 0; i < songs.length; i++) {
-   songs[i] = songs[i].replace(/>/g, "-");
-   songs[i] = songs[i].replace("*", "");
-   songs[i] = songs[i].replace("@", "");
-   songs[i] = songs[i].replace("(", "");
-   songs[i] = songs[i].replace("!", "");
+	songTitle.value = " ";
+	console.log(songTitle);
 
 }
+var addClick = document.getElementById("add-click");
+addClick.addEventListener("click", function(event) {
+	console.log(addClick);
+	document.getElementById("right-box").classList.remove("right-box");
+	document.getElementById("right-box").classList.add("hide-box");
+	document.getElementById("hide-music").classList.remove("hide-box");
+	document.getElementById("hide-music").classList.add("right-box");
+});
+var listMusic = document.getElementById("list-music");
+listMusic.addEventListener("click", function(event) {
+	document.getElementById("right-box").classList.remove("hide-box");
+	document.getElementById("right-box").classList.add("right-box");
+	document.getElementById("hide-music").classList.remove("right-box");
+	document.getElementById("hide-music").classList.add("hide-box");
+});
 
 
-console.log(songs);
-
-//var newList = document.getElementById("right-box").innerHTML;
- var output = " ";
- for  (var i = 0; i < songs.length; i ++) {
-
-  var songList = songs[i];
-  output = output + "<ul>" + songList;
-  output = output + "</ul>";
-
- }
-document.getElementsByClassName("right-box").innerHTML = output;
-//console.log("newList", newList);
-console.log("output", output);
 
 
 
