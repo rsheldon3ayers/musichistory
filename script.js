@@ -1,6 +1,11 @@
-var addButton = document.getElementById("add-button");
+
+	
+	var addButton = document.getElementById("add-button");
 addButton.addEventListener("click", function(event) {
+	
 	populateList();
+
+
 	console.log("works");
 });
 var rightBox = document.getElementById("right-box");
@@ -12,12 +17,16 @@ function populateList() {
 	console.log(songTitle, artistName, albumName);
 	var newSong= songTitle + "-" + artistName + "-" + albumName;
 
+	//add new song to the Song List
 	var newList = document.createElement("ul");
 	console.log(newList);
 	newList.innerHTML = newSong;
 	rightBox.insertBefore(newList, rightBox.childNodes[0]);
 
-	songTitle.value = " ";
+	document.getElementById("song-title").value = " ";
+	document.getElementById("artist-n").value = " ";
+	document.getElementById("album-n").value = " ";
+	
 	console.log(songTitle);
 
 }
