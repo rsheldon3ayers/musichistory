@@ -19,7 +19,7 @@ function populateArtistSelect () {
     var artistN = $("#artist-n").val();
     console.log(artistN);
     var option = artistOption.append("<option></option>");
-    // artistN.appendTo(option);
+    
     
    };
 
