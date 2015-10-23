@@ -1,0 +1,19 @@
+{
+  "songs": [
+    {
+      "title": "Something So Right",
+      "artist": "Paul Simon",
+      "album": "The Essential Paul Simon"
+    },
+    {
+      "title": "Still Crazy after All These Years",
+      "artist": "Brad Mehldau",
+      "album": "House on Hill"      
+    },
+    {
+      "title": "Slip SLiding Away",
+      "artist": "Paul Simon",
+      "album": "Still Crazy After All These Years"      
+    }
+  ]
+}
