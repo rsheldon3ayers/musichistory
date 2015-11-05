@@ -1,0 +1,25 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #E0E0E0;
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+  font-size: 18px;
+
+}
+#site-name {
+
+  margin-top: 2em;
+}
+
+
+.hide-box {
+  display: none;
+}
+section#hide-music input {
+  border: 2px solid black;
+  // width: 90%;
+  // margin: 20px;
+  // font-size: 26px;
+} 
+

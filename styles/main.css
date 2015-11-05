@@ -1,0 +1,15 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #E0E0E0;
+  font-size: 18px; }
+
+#site-name {
+  margin-top: 2em; }
+
+.hide-box {
+  display: none; }
+
+section#hide-music input {
+  border: 2px solid black; }
+
+/*# sourceMappingURL=main.css.map */

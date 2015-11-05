@@ -4,67 +4,104 @@
 <head>
   <meta charset="utf-8">
   <title>Nashville Software School</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
   
 </head>  
 <body>
   
-  <div class="flex-box">
-<header class ="flex-item">
-  <div>
-      <h1>Totally Legal Music App</h1>
-    </div>
-    <nav>
-    <div class="nav" id="list-music">
-    <a href="#">List Music</a> 
-    </div>
-    <div class="nav" id="add-click">
-      <a href="#">Add Music</a> 
-    </div>
-    <div class="nav">
-      <a href="#">Profile</a>
-    </div>
-  </nav>
   
-</header>
+<header>
+  
+  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="row">
+  <div class="col-md-4"><a id="#list-music">List Music</a></div>
+  <div class="col-md-4"><a id="#add-click">Add Music</a></div>
+  <div class="col-md-4"><a href="#">Profile</a></div>
+  </div>
+  </nav>
 
-    <form class="left flex-item">
+  <div>
+      <h1 id="site-name">Totally Legal Music App</h1>
+  </div>
+
+</header>
+<section class="container">
+
+  <div class="row">
+  <div class="col-md-4">
+    <form class ="form-inline">
       <label>Song Length:</label>
       <input type="range">
-      <label>Artist</label>
-      <select id="artist-name"></select>
-      <label>Album</label>
-      <select id="album-name"></select>
-    
-      <label>Genre:</label>
-      <section class="genre-left">
-        <p><input type="checkbox">Rock</p>
-        <p><input type="checkbox">Pop</p>
-        <p><input type="checkbox">Blues</p>
-      </section>
       
-      <section class="genre-right">
-        <p><input type="checkbox">Classical</p>
-        <p><input type="checkbox">Jazz</p>
-        <p><input type="checkbox">Hip hop</p>
-    </section>
-    <section class="sub-button">
-      <input type="submit" value="Filter">
+  <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Artist<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#"></a></li>
+  </ul>
+  </div>
+  <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Album <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+   
+  </ul>
+  </div>
+  <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Genre <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    
+  </ul>
+  </div>
+      
+  
+    <section>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
     </section>
       
   </form>
-  <section id="hide-music" class="hide-box">
-    <input type="text" id="song-title" placeholder="Song Title">
-    <input type="text" id="artist-n" placeholder="Artist">
-    <input type="text" id="album-n" placeholder="Album">
-    <button type="button" id="add-button">Add</button>
-    </section>
+  </div>
 
-  <section id="right-box" class="right-box"><button type="submit" id="more-button">More</button></section>
-    
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="script.js"></script>
-  <!-- // <script src="ajax.js"></script> -->
+  <section id="hide-music" class="hide-box">
+  <section class="container">
+
+  <div class="row">
+  <div class="col-md-4">
+
+  <input type="text" class="form-control" id="song-title" placeholder="Song title">
+  <input type="text" class="form-control" id="artist-n" placeholder="Artist">
+  <input type="text" class="form-control" id="album-n" placeholder="Album">
+  
+    <button type="button" id="add-button">Add</button>
+    </div>
+    </div>
+    </section>
+    </section>
+  <div class="row">
+  <div class="col-md-6">
+  <section id="right-box" class="right-box"><button type="button" class="btn btn-link" id="more-button">More</button></section>
+  </div>
+
+  
+  <script data-main="javascripts/entry" 
+         src="lib/bower_components/requirejs/require.js"></script>
+  
 </body>
 </html>
