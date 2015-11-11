@@ -1,0 +1,40 @@
+{
+  "songs": {
+   "caravan": {
+      "title": "Caravan",
+      "artist": "Van Morrison",
+      "album": "Moonlight",
+      "genre": "Pop"
+    },
+    "Light": {
+      "title": "There is a Light That Never Goes Out",
+      "artist": "The Smiths",
+      "album": "The Queen is Dead",
+      "genre": "Rock"      
+    },
+    "ignore": {
+      "title": "The More You Ignore Me(The Closer I Get)",
+      "artist": "Morrissey",
+      "album": "Kill Uncle", 
+      "genre": "Alternative"     
+    },
+    "right": {
+      "title": "Something So Right",
+      "artist": "Paul Simon",
+      "album": "The Essential Paul Simon",
+      "genre": "Pop"
+    },
+    "crazy": {
+      "title": "Still Crazy after All These Years",
+      "artist": "Brad Mehldau",
+      "album": "House on Hill",  
+      "genre": "Jazz"    
+    },
+    "sliding": {
+      "title": "Slip Sliding Away",
+      "artist": "Paul Simon",
+      "album": "Still Crazy After All These Years",
+      "genre": "Pop"      
+    }
+  }
+}

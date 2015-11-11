@@ -3,17 +3,20 @@
     {
       "title": "Something So Right",
       "artist": "Paul Simon",
-      "album": "The Essential Paul Simon"
+      "album": "The Essential Paul Simon",
+      "genre": "Pop"
     },
     {
       "title": "Still Crazy after All These Years",
       "artist": "Brad Mehldau",
-      "album": "House on Hill"      
+      "album": "House on Hill",  
+      "genre": "Jazz"    
     },
     {
       "title": "Slip Sliding Away",
       "artist": "Paul Simon",
-      "album": "Still Crazy After All These Years"      
+      "album": "Still Crazy After All These Years",
+      "genre": "Pop"      
     }
   ]
 }

@@ -1,7 +1,4 @@
 define(["jquery"], function($) {
-
-
-
   return {
     getMeSomeData: function(songData) {
       $.ajax({
@@ -11,18 +8,13 @@ define(["jquery"], function($) {
 	    		console.log(c);
 	    	}
  		}).done(function(songObject) {
-			require(["hbs!../templates/songs"], function(songTemplate) {
-	  			 $("#right-box").prepend(songTemplate(songObject));
-	  			 songData();
+			require(["hbs!../templates/album"], function(songTemplate) {
 	  			 
-			});
-			
- 		});
- 		}
+	  			 $(".album-menu").append(songTemplate(songObject));
+	  			 	
+
+	  			});
+			}
+		)}
  	};
-
 });
-
-
-
- 	
